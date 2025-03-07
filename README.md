@@ -9,7 +9,11 @@ This repository contains a collection of automation scripts using **Selenium 4**
 - Browser automation with Selenium WebDriver
 - Cross-browser compatibility (Chrome, Firefox, Edge)
 - Sample test scripts for different web applications
-- Integration with test frameworks like TestNG, JUnit, or PyTest
+- Handle multiple tabs
+- GeoLocation scripts
+- Network tab handling in selenium
+- Relative locators in Selenium 4
+- Full page screenshot, specific element screenshot and Specific portion screenshot like header or footer etc
 
 ## Getting Started:
 
