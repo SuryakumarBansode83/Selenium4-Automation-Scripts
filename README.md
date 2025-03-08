@@ -69,4 +69,4 @@ This repository contains a collection of automation scripts using **Selenium 4**
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/selenium4AutomationScripts.git
+   https://github.com/SuryakumarBansode83/Selenium4-Automation-Scripts.git
