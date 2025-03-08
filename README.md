@@ -15,7 +15,7 @@ This repository contains a collection of automation scripts using **Selenium 4**
 
 ## Features:
 
-- Handle multiple tabs
+- **Handle multiple tabs**
   - Selenium 4 provides enhanced window/tab handling with the newWindow() method, making it easier to manage multiple tabs. You can open, switch, close, and navigate between multiple tabs or windows efficiently.
   - Selenium 4 introduces driver.switchTo().newWindow(WindowType.TAB) to open a new tab directly.
   - driver.switchTo().newWindow(WindowType.TAB); → Opens a new tab.
@@ -25,7 +25,7 @@ This repository contains a collection of automation scripts using **Selenium 4**
     - WebDriver newWindow = driver.switchTo().newWindow(WindowType.WINDOW);
       newWindow.get("https://www.google.com");
     
-- GeoLocation scripts
+- **GeoLocation scripts**
   - Selenium 4 introduces Chrome DevTools Protocol (CDP), which allows us to mock geolocation data. This is useful for testing location-based features such as geo-restricted content, maps, and localized searches.
   - Selenium 4 allows setting latitude, longitude, and accuracy using the Emulation.setGeolocationOverride method.
   - This will reset the browser to use the real device location.
@@ -36,7 +36,7 @@ This repository contains a collection of automation scripts using **Selenium 4**
     Tokyo	    35.6895	    139.6917
     Sydney	   -33.8688	    151.2093
 
-- Network tab handling in selenium
+- **Network tab handling in selenium**
   - Selenium 4 introduced Chrome DevTools Protocol (CDP) support, which allows us to interact with the browser's Network Tab directly. This is useful for monitoring network requests, capturing responses, modifying requests, and handling authentication.
   - Using Selenium 4 with CDP, you can:
     - Capture network requests & responses (e.g., API calls, resource loads). 
@@ -46,7 +46,7 @@ This repository contains a collection of automation scripts using **Selenium 4**
     - Intercept and modify requests (e.g., change headers, authentication tokens). 
     - Capture request timings & analyze response codes.
     
-- Relative locators in Selenium 4
+- **Relative locators**
   - Selenium 4 introduced Relative Locators (formerly known as Friendly Locators) to find web elements based on their position relative to other elements. This makes it easier to locate elements dynamically without relying on complex XPath or CSS selectors. The RelativeLocator.withTagName() method helps locate elements that are above, below, to the left, to the right, or near another element.
   - Method	             Description
     above(element)	     Finds an element located above the given element.
@@ -58,7 +58,7 @@ This repository contains a collection of automation scripts using **Selenium 4**
   - When elements are dynamically generated, making it hard to use fixed locators. 
   - When improving readability and maintainability of test scripts.
 
-- Full page screenshot, specific element screenshot and Specific portion screenshot like header or footer etc
+- **Full page screenshot, specific element screenshot and Specific portion screenshot**
   - Selenium 4 provides better support for full-page screenshots, element-specific screenshots, and cropped screenshots of a specific portion. Let's explore all these features step by step.
   - Selenium 4 introduced full-page screenshot support for browsers like Firefox. getFullPageScreenshotAs(OutputType.FILE) only works in Firefox.
   - Selenium 4 allows capturing a specific web element instead of the entire page. The .getScreenshotAs(OutputType.FILE) method captures only the specified element.
