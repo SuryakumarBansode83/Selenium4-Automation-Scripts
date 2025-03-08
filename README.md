@@ -1,5 +1,13 @@
-# Selenium4AutomationScripts
-A collection of Selenium 4 automation scripts for web testing.
+## Author
+- **Suryakumar Bansode**
+- GitHub: https://github.com/SuryakumarBansode83
+- Email: e_surya_in@yahoo.com
+
+## License
+This project is licensed under the **MIT License** – see the LICENSE file for details.
+
+## Disclaimer
+Unauthorized copying, distribution, or use of this code without proper attribution is prohibited.
 
 # Selenium 4 Automation Scripts
 
