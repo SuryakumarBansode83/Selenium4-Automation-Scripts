@@ -18,18 +18,21 @@ This repository contains a collection of automation scripts using **Selenium 4**
 - **Handle multiple tabs**
   - Selenium 4 provides enhanced window/tab handling with the newWindow() method, making it easier to manage multiple tabs. You can open, switch, close, and navigate between multiple tabs or windows efficiently.
   - Selenium 4 introduces driver.switchTo().newWindow(WindowType.TAB) to open a new tab directly.
-  - driver.switchTo().newWindow(WindowType.TAB); → Opens a new tab.
+    ```bash
+    driver.switchTo().newWindow(WindowType.TAB); → Opens a new tab.
     driver.getWindowHandle(); → Gets the handle of the current tab.
     driver.switchTo().window(handle); → Switches between tabs.
   - You can also open a new separate window instead of a tab.
-    - WebDriver newWindow = driver.switchTo().newWindow(WindowType.WINDOW);
+    ```bash
+      WebDriver newWindow = driver.switchTo().newWindow(WindowType.WINDOW);
       newWindow.get("https://www.google.com");
     
 - **GeoLocation scripts**
   - Selenium 4 introduces Chrome DevTools Protocol (CDP), which allows us to mock geolocation data. This is useful for testing location-based features such as geo-restricted content, maps, and localized searches.
   - Selenium 4 allows setting latitude, longitude, and accuracy using the Emulation.setGeolocationOverride method.
   - This will reset the browser to use the real device location.
-    - devTools.send(Emulation.clearGeolocationOverride());
+    ```bash
+        devTools.send(Emulation.clearGeolocationOverride());
   - City	    Latitude	Longitude
     New York	40.7128	    -74.0060
     London	    51.5074	     -0.1278
@@ -47,11 +50,13 @@ This repository contains a collection of automation scripts using **Selenium 4**
     - Capture request timings & analyze response codes.
     
 - **Relative locators**
-  - Selenium 4 introduced Relative Locators (formerly known as Friendly Locators) to find web elements based on their position relative to other elements. This makes it easier to locate elements dynamically without relying on complex XPath or CSS selectors. The RelativeLocator.withTagName() method helps locate elements that are above, below, to the left, to the right, or near another element.
+  - Selenium 4 introduced Relative Locators (formerly known as Friendly Locators) to find web elements based on their position relative to other elements. This makes it easier to locate elements dynamically without relying on complex XPath or CSS selectors.
+    ```bash
+    The RelativeLocator.withTagName() method helps locate elements that are above, below, to the left, to the right, or near another element.
   - Method	             Description
     above(element)	     Finds an element located above the given element.
     below(element)	     Finds an element located below the given element.
-    toLeftOf(element)	 Finds an element to the left of the given element.
+    toLeftOf(element)	   Finds an element to the left of the given element.
     toRightOf(element)	 Finds an element to the right of the given element.
     near(element)	     Finds an element near the given element (default distance: 50px).
   - When elements don't have unique locators (like id or class). 
